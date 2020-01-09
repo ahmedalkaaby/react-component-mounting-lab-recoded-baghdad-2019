@@ -50,5 +50,6 @@ class Timer extends Component {
 
 
 }
+clearInterval(this.interval);
 
 export default Timer;
