@@ -11,6 +11,8 @@ class Timer extends Component {
 
   componentDidMount() {
     this.interval = setInterval(this.clockTick, 15000);
+    clearInterval(this.interval);
+
   }
 
 
@@ -50,6 +52,5 @@ class Timer extends Component {
 
 
 }
-clearInterval(this.interval);
 
 export default Timer;
